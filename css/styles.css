@@ -1,0 +1,300 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+/** HEADER **/
+
+.barra-superior {
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav {
+    background-color: #f0a83e;
+    display: flex;
+    justify-content: space-around;
+    height: 5rem;
+    align-items: center;
+}
+
+.barra-superior ul {
+    display: flex;
+}
+
+.barra-superior li {
+    /* margin-right: 1rem; */
+}
+
+/** PRINCIPAL */
+
+.principal {
+    background-image: url(../img/fondo.png);
+    width: 100%;
+    text-align: right;
+    height: 30rem;
+    min-height: 25rem;
+    background-position: center center;
+    background-size: cover;
+    font-weight: normal;
+}
+
+.principal div {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-right: 3rem;
+}
+
+.principal h2 {
+    margin-top: 0;
+    background-color: white;
+    border-radius: 0.8rem;
+    display: inline;
+    padding: 0.8rem;
+    color: #3c2313;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.principal h3 {
+    font-weight: normal;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav img {
+    margin-right: 0.3rem;
+}
+
+.btn-comederos {
+    background-color: #f0a83e;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/**PRODUCTOS**/
+
+.brown {
+    color: #3c2313;
+}
+.productos-destacados {
+    text-align: center;
+    margin-top: 2rem;
+}
+.img-patita {
+    display: block;
+    margin: auto;
+}
+
+.productos-destacados h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.productos-destacados nav {
+    display: flex;
+    color: #666666;
+    justify-content: center;
+}
+
+.productos-destacados nav a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #666666;
+    margin-left: 0.7rem;
+}
+
+.productos {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.productos article img {
+    width: 70%;
+    height: 30%;
+}
+
+.productos h4 {
+    margin-bottom: 0.3rem;
+}
+
+.productos p {
+    color: #f0a83e;
+    margin-top: 0;
+}
+
+/** FORM **/
+
+.form-contactanos {
+    text-align: center;
+}
+.form-contactanos h2 {
+    font-size: 30px;
+}
+input {
+    border: 0px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.form-contactanos input {
+    margin: 0.3rem;
+    background-color: #3c2313;
+    width: 30%;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+.form-contactanos input::placeholder {
+    color: white;
+}
+
+.btn {
+    border-radius: 0.8rem;
+    border: none;
+    padding: 1rem 1.5rem;
+}
+
+.btn-form {
+    color: white;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    width: 8rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.btn-reset {
+    background-color: #8a8787;
+}
+
+.btn-send {
+    background-color: #f0a83e;
+}
+
+/**SUSCRIPTION*/
+
+.suscription {
+    margin-top: 2rem;
+    background-color: #f0a83e;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5rem 2rem;
+}
+
+.suscription div {
+    display: flex;
+    align-items: center;
+}
+
+.suscription img {
+    height: 2.5rem;
+    width: 3rem;
+    margin-right: 1rem;
+}
+.suscription input {
+    width: 25rem;
+    background: white;
+    border: 0px;
+}
+
+.suscription input::placeholder {
+    color: #a0a0a0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btn-suscribir {
+    background-color: #3c2313;
+    color: white;
+    padding-top: 0.7em;
+    padding-bottom: 0.7rem;
+    margin-left: 1rem;
+}
+
+/**FOOTER*/
+
+footer {
+    color: white;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3c2313;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.footer-contacto {
+    padding: 2rem;
+}
+
+.footer-contacto div {
+    display: flex;
+}
+
+.img-footer {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-contacto div div {
+    display: block;
+}
+
+.footer-contacto h3 {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.footer-contacto p {
+    color: #8a8787;
+    margin-top: 0;
+    text-align: left;
+}
+
+.footer-derechos {
+    background-color: #222222;
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.img-logo {
+    width: 15rem;
+}
+
+#cate {
+    display: flex;
+}
+
+@media (max-width: 620px) {
+    .footer-section,
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 620px) {
+    .barra-superior,
+    #cate  {
+        display: none;
+    }
+
